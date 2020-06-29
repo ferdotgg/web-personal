@@ -91,6 +91,15 @@
 
 /* SCROLL BAR */
 
+.row {
+  display: table;
+}
+
+.col {
+  display: table-cell;
+  width: 33.33%;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -145,7 +154,7 @@ i.fa {
 
 .whitespace {
   width: 100%;
-  height: 80vh;
+  height: 95vh;
   background-color: black;
 }
 
@@ -192,7 +201,6 @@ i.fa {
   background-repeat: repeat-x;
   margin-top: -40px;
   border-top: 2px solid #6000ff;
-  background-color: white;
 }
 
 .about-me {
@@ -350,7 +358,6 @@ ul.timeline>li:before {
   font-weight: 600;
   padding: 5px;
   font-size: 12px;
-  color: #111111;
 }
 
 .skill-container-tech {
@@ -544,8 +551,8 @@ canvas {
   justify-content: center;
 }
 
-#particles-js {
-  position: relative;
+.particles {
+  position: absolute;
   width: 100%;
   height: 300px;
   background-image: url(/assets/images/particlesbg.webp);
@@ -585,7 +592,7 @@ canvas {
 @media (max-width: 1024px) {
   .whitespace {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: black;
   }
 
