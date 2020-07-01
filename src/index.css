@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,600i,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,600i,900&display=swap");
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* LOADER */
@@ -114,33 +114,38 @@ i.fa {
 
 /* NAVBAR */
 
-
 /* ========================= PARALLAX HEADER ========================= */
 
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-10px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
 .hero-image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url(/assets/images/parallax/fondo-opt.webp) no-repeat 50% 50%;
-  background-size: cover;
+  animation: float 10s ease-in-out infinite;
+  /* background-size: cover; */
 }
 
 .text {
-  position: absolute;
   width: 100%;
   height: 20%;
   top: 70%;
-  background: url(/assets/images/parallax/texto-op.webp) no-repeat 50% 40%;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .parallax-el {
-  position: absolute;
-  width: 100%;
-  height: 140%;
-  background: url(/assets/images/parallax/ryze-test.webp) no-repeat 50% 50%;
-  background-size: cover;
-  top: -50%;
+  animation: float 6s ease-in-out infinite;
+  /* background-size: cover; */
 }
 
 .whitespace {
@@ -156,8 +161,11 @@ i.fa {
   color: white;
   padding: 30px;
   background: rgb(0, 34, 219);
-  background-image:
-    linear-gradient(180deg, rgba(0, 0, 0, 1) 48%, rgba(99, 6, 255, 1) 30%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 48%,
+    rgba(99, 6, 255, 1) 30%
+  );
   background-position: top;
 }
 
@@ -166,19 +174,19 @@ i.fa {
   margin-top: 150px;
 }
 
-.profile-container-avatar>img {
+.profile-container-avatar > img {
   width: 200px;
   border-radius: 50%;
   border: 7px solid #6306ff;
   margin-bottom: 20px;
 }
 
-.profile-container-name>h1 {
+.profile-container-name > h1 {
   font-weight: 900;
   font-size: 50px;
 }
 
-.profile-container-name>h5 {
+.profile-container-name > h5 {
   font-weight: 600;
   font-size: 30px;
 }
@@ -208,7 +216,7 @@ i.fa {
   display: inline-block;
 }
 
-.about-me-title>h1 {
+.about-me-title > h1 {
   color: #6000ff;
   font-weight: 900;
   text-align: center;
@@ -219,19 +227,19 @@ i.fa {
   display: inline-block;
 }
 
-.about-me-info>p {
+.about-me-info > p {
   font-size: 20px;
   font-weight: 600;
 }
 
-.about-me-info>p>a {
+.about-me-info > p > a {
   font-weight: 800;
   color: #6000ff;
   text-decoration: underline;
   transition: 0.5s;
 }
 
-.about-me-info>p>a:hover {
+.about-me-info > p > a:hover {
   font-weight: 800;
   color: #111111;
   text-decoration: underline;
@@ -276,7 +284,7 @@ ul.timeline {
 }
 
 ul.timeline:before {
-  content: ' ';
+  content: " ";
   background: #d4d9df;
   display: inline-block;
   position: absolute;
@@ -286,13 +294,13 @@ ul.timeline:before {
   z-index: 400;
 }
 
-ul.timeline>li {
+ul.timeline > li {
   margin: 20px 0;
   padding-left: 20px;
 }
 
-ul.timeline>li:before {
-  content: ' ';
+ul.timeline > li:before {
+  content: " ";
   background: white;
   display: inline-block;
   position: absolute;
@@ -407,7 +415,7 @@ ul.timeline>li:before {
   position: relative;
 }
 
-.certificate-section-title>span {
+.certificate-section-title > span {
   position: relative;
   display: inline-block;
   padding-right: 1.4em;
@@ -430,7 +438,7 @@ ul.timeline>li:before {
   position: relative;
 }
 
-.certificate-section-title-about>span {
+.certificate-section-title-about > span {
   position: relative;
   display: inline-block;
   padding-right: 1.4em;
@@ -473,7 +481,7 @@ ul.timeline>li:before {
   transition: 0.5s;
 }
 
-.certificate-container-image>img {
+.certificate-container-image > img {
   width: 50px;
   border-radius: 50%;
 }
@@ -493,7 +501,7 @@ ul.timeline>li:before {
   background: #fff !important;
   color: #111111;
   border: 0px solid white !important;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .card:hover {
@@ -504,7 +512,6 @@ ul.timeline>li:before {
   background: indigo;
   color: white;
 }
-
 
 /* ========================= BLOG ========================= */
 
@@ -519,7 +526,7 @@ ul.timeline>li:before {
   border: 0px solid white !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .card-blog:hover {
@@ -530,7 +537,6 @@ ul.timeline>li:before {
   height: 200px !important;
   background-size: cover !important;
 }
-
 
 /* ========================= FOOTER ========================= */
 
@@ -569,13 +575,13 @@ canvas {
   align-items: center;
 }
 
-.social-icons>a>img {
+.social-icons > a > img {
   height: 70px;
   margin-left: 20px;
   transition: 1s;
 }
 
-.social-icons>a>img:hover {
+.social-icons > a > img:hover {
   transform: scale(1.2);
   transition: 1s;
 }

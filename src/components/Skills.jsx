@@ -70,7 +70,7 @@ const Skills = () => {
       skill: "INTERMEDIO",
     },
     {
-      techologie: "PHOTOSHOP",
+      techologie: "ADOBE PREMIERE",
       skill: "INTERMEDIO",
     },
   ];

@@ -2,6 +2,23 @@ import React from "react";
 import Particles from "react-particles-js";
 
 const Footer = () => {
+  const socials = [
+    {
+      name: "GitHub",
+      url: "https://github.com/ScriptKash",
+      image: "./assets/images/iconos/github.png",
+    },
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/scriptkash/",
+      image: "./assets/images/iconos/linkedin.svg",
+    },
+    {
+      name: "Email",
+      url: "mailto:me@fernando.gg",
+      image: "./assets/images/iconos/mail.svg",
+    },
+  ];
   return (
     <>
       <Particles
@@ -9,11 +26,11 @@ const Footer = () => {
           position: "absolute",
           maxWidth: "100%",
           overflow: "hidden",
-          backgroundImage: 'url(/assets/images/particlesbg.webp)',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundPosition: 'top',
-            backgroundAttachment: 'fixed',
+          backgroundImage: "url(/assets/images/particlesbg.webp)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          backgroundAttachment: "fixed",
           maxHeight: 300,
         }}
         params={{
@@ -128,33 +145,28 @@ const Footer = () => {
         }}
       />
       <div className="particles-section">
-        <div style={{
-            position: 'absolute',
-            width: '100%',
+        <div
+          style={{
+            position: "absolute",
+            width: "100%",
             height: 300,
-            
-            overflow: 'hidden',
-            textAlign: 'center',
-        }}>
+
+            overflow: "hidden",
+            textAlign: "center",
+          }}
+        >
           <div className="social">
-            <div className="social-icons">
-              <a href="https://github.com/ScriptKash" target="_blank">
-                <img
-                  className="lazyload"
-                  data-src="/assets/images/iconos/github.png"
-                  alt=""
-                />
-              </a>
-            </div>
-            <div className="social-icons">
-              <a href="https://www.linkedin.com/in/scriptkash/" target="_blank">
-                <img
-                  className="lazyload"
-                  data-src="/assets/images/iconos/linkedin.svg"
-                  alt=""
-                />
-              </a>
-            </div>
+            {socials.map((social) => (
+              <div key={social.name} className="social-icons">
+                <a href={social.url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    className="lazyload"
+                    data-src={social.image}
+                    alt={social.name}
+                  />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </div>

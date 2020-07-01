@@ -71,7 +71,7 @@ const Projects = () => {
         <h1 className="section-skills-title">Proyectos</h1>
         <div className="row align-items-center">
           {myProjects.map((project) => (
-            <div className="col-md-4">
+            <div key={project.name} className="col-md-4">
               <a
                 style={{ textDecoration: "none" }}
                 href={project.url}
@@ -90,6 +90,7 @@ const Projects = () => {
                     <p className="card-text">
                       {project.technologies.map((tech) => (
                         <span
+                          key={tech.name}
                           style={{ marginRight: 4 }}
                           className={"badge rounded-pill bg-" + tech.badge}
                         >

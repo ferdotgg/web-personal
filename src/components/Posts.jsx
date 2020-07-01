@@ -24,7 +24,7 @@ const Posts = () => {
         <h1 className="section-skills-title">Publicaciones</h1>
         <div className="row align-items-center">
           {myPosts.map((post) => (
-            <div className="col-md-4">
+            <div key={post.title} className="col-md-4">
               <a
                 style={{ textDecoration: "none" }}
                 href={post.url}

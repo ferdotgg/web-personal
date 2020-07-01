@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const Experience = () => {
   const experiences = [
     {
-      time: "2019 - Actualidad",
+      time: "2019 - 2020",
       title: "Transformación digital en una ASADA",
       description: `El objetivo del proyecto es agilizar los procesos
       administrativos de la ASADA mediante el desarrollo de una
@@ -30,7 +30,7 @@ const Experience = () => {
         <h1 className="section-skills-title">Experiencias</h1>
         <div className="row align-items-center">
           {experiences.map((experience) => (
-            <>
+            <Fragment key={experience.title}>
               <div className="col-md-8">
                 <span className="timelime-date float-left">
                   {experience.time}
@@ -49,7 +49,7 @@ const Experience = () => {
                   alt={experience.title}
                 />
               </div>
-            </>
+            </Fragment>
           ))}
         </div>
       </div>
