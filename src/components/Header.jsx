@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <Particles
+      {/* <Particles
         style={{
           position: "absolute",
           maxWidth: "100%",
@@ -110,7 +110,7 @@ const Header = () => {
           },
           retina_detect: true,
         }}
-      />
+      /> */}
 
       <header>
         <div
