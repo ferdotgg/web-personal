@@ -12,10 +12,10 @@ const Header = () => {
       character: "/assets/images/parallax/wick.png",
       background: "/assets/images/parallax/background.jpg",
     },
-    {
-      character: "/assets/images/parallax/deadpool.png",
-      background: "/assets/images/parallax/background.jpg",
-    },
+    // {
+    //   character: "/assets/images/parallax/deadpool.png",
+    //   background: "/assets/images/parallax/background.jpg",
+    // },
     {
       character: "/assets/images/parallax/spider.png",
       background: "/assets/images/parallax/background.jpg",
