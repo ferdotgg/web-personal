@@ -1,15 +1,15 @@
 import React from "react";
 import MeHeader from "./MeHeader";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
 const Header = () => {
   const images = [
     {
-      character: "/assets/images/parallax/ryze.png",
+      character: "/assets/images/parallax/ryze-min.png",
       background: "/assets/images/parallax/background.jpg",
     },
     {
-      character: "/assets/images/parallax/wick.png",
+      character: "/assets/images/parallax/wick-min.png",
       background: "/assets/images/parallax/background.jpg",
     },
     // {
@@ -17,7 +17,7 @@ const Header = () => {
     //   background: "/assets/images/parallax/background.jpg",
     // },
     {
-      character: "/assets/images/parallax/spider.png",
+      character: "/assets/images/parallax/spider-min.png",
       background: "/assets/images/parallax/background.jpg",
     },
   ];
@@ -142,7 +142,7 @@ const Header = () => {
         <div
           style={{
             position: "absolute",
-            background: "url(/assets/images/parallax/texto-op.webp)",
+            background: "url(/assets/images/parallax/texto.png)",
             backgroundPosition: "50% 40%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",

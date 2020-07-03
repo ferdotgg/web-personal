@@ -71,7 +71,7 @@ const Projects = () => {
         <h1 className="section-skills-title">Proyectos</h1>
         <div className="row align-items-center">
           {myProjects.map((project) => (
-            <div key={project.name} className="col-md-4">
+            <div key={project.name} className="col-md-4 animatable fadeInDown">
               <a
                 style={{ textDecoration: "none" }}
                 href={project.url}

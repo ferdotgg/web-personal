@@ -160,7 +160,7 @@ const Footer = () => {
               <div key={social.name} className="social-icons">
                 <a href={social.url} target="_blank" rel="noopener noreferrer">
                   <img
-                    className="lazyload"
+                    className="lazyload animatable bounceIn"
                     data-src={social.image}
                     alt={social.name}
                   />
