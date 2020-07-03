@@ -157,10 +157,10 @@ const Footer = () => {
         >
           <div className="social">
             {socials.map((social) => (
-              <div key={social.name} className="social-icons">
+              <div key={social.name} className="social-icons animatable bounceIn">
                 <a href={social.url} target="_blank" rel="noopener noreferrer">
                   <img
-                    className="lazyload animatable bounceIn"
+                    className="lazyload"
                     data-src={social.image}
                     alt={social.name}
                   />
