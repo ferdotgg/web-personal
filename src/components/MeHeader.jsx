@@ -5,7 +5,7 @@ const MeHeader = () => {
         <section className="profile">
         <div className="profile-container">
           <div className="profile-container-avatar">
-            <img className="lazyload" data-src="./assets/images/me.webp" alt="" />
+            <img src="./assets/images/me.jpg" alt="Fernando Briceño" />
           </div>
           <div className="profile-container-name">
             <h1>Fernando Briceño</h1>

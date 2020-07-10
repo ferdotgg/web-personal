@@ -26,7 +26,7 @@ const Footer = () => {
           position: "absolute",
           maxWidth: "100%",
           overflow: "hidden",
-          backgroundImage: "url(/assets/images/particlesbg.webp)",
+          backgroundImage: "url(/assets/images/particlesbg.jpg)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "top",
@@ -160,8 +160,7 @@ const Footer = () => {
               <div key={social.name} className="social-icons animatable bounceIn">
                 <a href={social.url} target="_blank" rel="noopener noreferrer">
                   <img
-                    className="lazyload"
-                    data-src={social.image}
+                    src={social.image}
                     alt={social.name}
                   />
                 </a>

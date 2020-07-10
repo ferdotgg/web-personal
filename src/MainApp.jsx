@@ -11,9 +11,10 @@ import Footer from "./components/Footer";
 const MainApp = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
+    window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 500);
   });
   return (
     <>

@@ -4,17 +4,17 @@ const Posts = () => {
   const myPosts = [
     {
       title: "Si se quiere, se puede",
-      image: "https://i.imgur.com/hpyNkFb.png",
+      image: "/assets/images/posts/1.jpg",
       url: "https://www.fernando.gg/blog/si-se-quiere-se-puede/",
     },
     {
       title: "Mi startup, Torneos.GG",
-      image: "https://i.imgur.com/WX6iCvg.jpg",
+      image: "/assets/images/posts/2.jpg",
       url: "https://www.fernando.gg/blog/torneosgg/",
     },
     {
       title: "Involúcrate, aprende y crece",
-      image: "https://i.imgur.com/ITTT3pM.png",
+      image: "/assets/images/posts/3.jpg",
       url: "https://www.fernando.gg/blog/involucrate-aprende-crece/",
     },
   ];

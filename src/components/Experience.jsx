@@ -44,8 +44,8 @@ const Experience = () => {
               </div>
               <div className="col-md-4 image-container">
                 <img
-                  className="timelime-image animatable bounceIn lazyload"
-                  data-src={experience.image}
+                  className="timelime-image animatable bounceIn"
+                  src={experience.image}
                   alt={experience.title}
                 />
               </div>

@@ -48,7 +48,7 @@ const Projects = () => {
       name: "PANGEA LIVING",
       description: "Plataforma para reservar habitaciones en residenciales",
       image: "./assets/images/proyectos/pangea.jpg",
-      url: "#",
+      url: "https://pangealivingmde.com/",
       technologies: [
         {
           name: "ReactJS",

@@ -118,8 +118,7 @@ const Certificates = () => {
                 <div className="certificate-container animatable bounceIn">
                   <div className="certificate-container-image">
                     <img
-                      className="lazyload"
-                      data-src={certificate.image}
+                      src={certificate.image}
                       alt="Certificado"
                     />
                   </div>
