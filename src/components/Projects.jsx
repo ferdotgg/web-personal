@@ -104,7 +104,7 @@ const Projects = ({ handleChangePage }) => {
 
   return (
     <Box
-      bgcolor="#000"
+      bgcolor={colors.blackTrue}
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,1)40%), url(./assets/images/proyectos/fondo-min.jpg)`,
         backgroundSize: "100%",
