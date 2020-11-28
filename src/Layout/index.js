@@ -28,7 +28,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Link } from "react-router-dom";
 
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import FavoriteIcon from "@material-ui/icons/Favorite";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const useStyles = makeStyles((theme) =>
@@ -265,7 +265,11 @@ const Layout = ({
                       <MenuIcon />
                     </IconButton>
                     <Link to="/" style={{ textDecoration: "none" }}>
-                      <Typography variant="body1" className={classes.title}>
+                      <Typography
+                        onClick={() => handleChangePage(0)}
+                        variant="body1"
+                        className={classes.title}
+                      >
                         Fernando.GG
                       </Typography>
                     </Link>
