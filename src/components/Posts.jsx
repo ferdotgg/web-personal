@@ -21,7 +21,7 @@ const Posts = () => {
   return (
     <section className="blog">
       <div className="container">
-        <h1 className="section-skills-title">Publicaciones</h1>
+        <h1 className="section-skills-title">Blog posts</h1>
         <div className="row align-items-center">
           {myPosts.map((post) => (
             <div key={post.title} className="col-md-4 animatable fadeInUp">

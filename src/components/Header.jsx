@@ -1,32 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import MeHeader from "./MeHeader";
-// import Particles from "react-particles-js";
+import Particles from "react-particles-js";
+
+import { Box, IconButton, useMediaQuery, useTheme } from "@material-ui/core";
+import CachedIcon from "@material-ui/icons/Cached";
+import { colors } from "../theme/colors.theme";
 
 const Header = () => {
+  const theme = useTheme();
+
+  const desktop = useMediaQuery(theme.breakpoints.up("sm"));
+
   const images = [
     {
       character: "/assets/images/parallax/ryze-min.png",
       background: "/assets/images/parallax/background.jpg",
     },
     {
-      character: "/assets/images/parallax/wick-min.png",
+      character: "/assets/images/parallax/batman-min.png",
       background: "/assets/images/parallax/background.jpg",
     },
-    // {
-    //   character: "/assets/images/parallax/deadpool.png",
-    //   background: "/assets/images/parallax/background.jpg",
-    // },
+    {
+      character: "/assets/images/parallax/deadpool-min.png",
+      background: "/assets/images/parallax/background.jpg",
+    },
     {
       character: "/assets/images/parallax/spider-min.png",
       background: "/assets/images/parallax/background.jpg",
     },
   ];
 
-  const item = images[Math.floor(Math.random() * images.length)];
+  const [image, setImage] = useState(
+    images[Math.floor(Math.random() * images.length)]
+  );
+  const [count, setCount] = useState(0);
+
+  const handleChangeImage = () => {
+    setCount(count + 1);
+
+    if (count >= 3) {
+      setImage(images[0]);
+      setCount(0);
+    }
+
+    setImage(images[count]);
+  };
 
   return (
     <>
-      {/* <Particles
+      <Particles
         style={{
           position: "absolute",
           maxWidth: "100%",
@@ -110,15 +132,15 @@ const Header = () => {
           },
           retina_detect: true,
         }}
-      /> */}
+      />
 
-      <header>
+      {/* <header>
         <div
           style={{
             width: "100%",
             height: "100%",
             position: "absolute",
-            backgroundImage: "url(" + item.background + ")",
+            backgroundImage: "url(" + image.background + ")",
             backgroundPosition: "50% 50%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -130,7 +152,7 @@ const Header = () => {
             position: "absolute",
             width: "100%",
             height: "140%",
-            backgroundImage: "url(" + item.character + ")",
+            backgroundImage: "url(" + image.character + ")",
             top: "-50%",
             backgroundPosition: "50% 50%",
             backgroundRepeat: "no-repeat",
@@ -152,7 +174,16 @@ const Header = () => {
         ></div>
         <div className="whitespace"></div>
       </header>
-      <MeHeader />
+      
+      {desktop && (
+        <Box zIndex={20} textAlign="right" marginRight={10}>
+          <IconButton onClick={handleChangeImage} style={{ outline: "none" }}>
+            <CachedIcon style={{ fontSize: 50, color: colors.white }} />
+          </IconButton>
+        </Box>
+      )}
+
+      <MeHeader /> */}
     </>
   );
 };

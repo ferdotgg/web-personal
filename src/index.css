@@ -4,6 +4,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-weight: 700 !important;
+}
+
+h1 {
+  font-weight: 700 !important;
+}
+
 /* LOADER */
 .loader-container {
   z-index: 99999;
@@ -12,7 +20,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgb(0, 34, 219);
+  background: radial-gradient(circle, rgba(0,2,167,1) 0%, rgba(0,1,56,1) 55%);
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -71,7 +79,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 /* Track */
@@ -82,6 +90,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(0, 34, 219);
+  border-radius: 360px;
 }
 
 /* Handle on hover */
@@ -104,12 +113,18 @@ i.fa {
   margin-right: 14px;
   line-height: 39px;
   text-align: center;
-  color: #ffda45;
+  color: #fff;
   background: transparent;
   border-radius: 50%;
-  border: 4px solid #ffda45;
+  border: 4px solid #fff;
   display: inline-block;
   width: 47px;
+}
+
+.MuiDialog-paper {
+  border: 2px solid #313131;
+  border-radius: 10px !important;
+  background-color: #141414 !important;
 }
 
 /* NAVBAR */
@@ -145,39 +160,39 @@ i.fa {
 
 .parallax-el {
   animation: float 6s ease-in-out infinite;
-  /* background-size: cover; */
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .whitespace {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-color: black;
 }
 
 /* PROFILE */
 
 .profile {
-  height: 600px;
+  margin-top: 150px;
   color: white;
   padding: 30px;
-  background: rgb(0, 34, 219);
+  background: rgba(1, 68, 179, 1);
   background-image: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 48%,
-    rgba(99, 6, 255, 1) 30%
+    #01389f 30%
   );
   background-position: top;
 }
 
 .profile-container {
   text-align: center;
-  margin-top: 150px;
 }
 
 .profile-container-avatar > img {
   width: 200px;
   border-radius: 50%;
-  border: 7px solid #6306ff;
+  border: 7px solid #01389f;
+  background-color: #000;
   margin-bottom: 20px;
 }
 
@@ -196,15 +211,16 @@ i.fa {
 .separator {
   width: 100%;
   height: 200px;
-  background-image: url(/assets/images/separador.jpg);
+  background-image: url(/assets/images/separador.png);
   background-repeat: repeat-x;
   margin-top: -40px;
-  border-top: 2px solid #6000ff;
-  background-color: white;
+  border-top: 2px solid #01389f;
+  background-color: #000a4e;
+  background-size: cover;
 }
 
 .about-me {
-  background: #fff;
+  background: #000a4e;
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 700px));
@@ -248,7 +264,7 @@ i.fa {
 
 .about-bold {
   font-weight: 800;
-  color: #6000ff;
+  color: #0178FF;
 }
 
 /* ========================= EXPERIENCE ========================= */
@@ -280,7 +296,7 @@ ul.timeline {
 
 .timelime-company {
   font-weight: 900;
-  color: #ffda45;
+  color: #0178FF;
 }
 
 ul.timeline:before {
@@ -305,7 +321,7 @@ ul.timeline > li:before {
   display: inline-block;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #ffda45;
+  border: 3px solid #0178FF;
   left: 20px;
   width: 20px;
   height: 20px;
@@ -370,25 +386,26 @@ ul.timeline > li:before {
 
 .skill-dev {
   background-color: #111111;
-  color: #ffda45;
+  color: #1fc240;
 }
 
 .skill-designer {
-  background-color: #fff;
+  background-color: #111111;
   color: #8e00ad;
 }
 
 .skill-other {
-  background-color: #fff;
-  color: #ad0006;
+  background-color: #111111;
+  color: #e06b0b;
 }
 
 .skill-other-nothing {
-  background-color: #ad0006;
+  background-color: #e06b0b;
 }
 
 .skill-gold {
-  background-color: #ffda45;
+  background-color: #1fc240;
+  color: #fff;
 }
 
 .skill-purple {
@@ -397,14 +414,14 @@ ul.timeline > li:before {
 }
 
 .skill-red {
-  background-color: #ad0006;
+  background-color: #e06b0b;
   color: #fff;
 }
 
 /* ========================= STUDIES ========================= */
 
 .certificate-section {
-  background-color: #111111;
+  background-color: #141414;
   padding: 50px;
 }
 
@@ -419,7 +436,7 @@ ul.timeline > li:before {
   position: relative;
   display: inline-block;
   padding-right: 1.4em;
-  background: #111111;
+  background: #141414;
 }
 
 .certificate-section-title:before {
@@ -428,7 +445,7 @@ ul.timeline > li:before {
   top: 50%;
   left: 0;
   width: 100%;
-  border-bottom: 4px solid #ffda45;
+  border-bottom: 4px solid #fff;
 }
 
 .certificate-section-title-about {
@@ -465,14 +482,15 @@ ul.timeline > li:before {
 .certificate-container {
   cursor: pointer;
   margin-top: 10px;
-  background-color: white;
+  background-color: #00189c;
   padding: 10px;
   display: flex;
   align-items: center;
   border-radius: 20px;
   color: black;
-  border: 3px solid #ffda45;
+  border: 3px solid #0178FF;
   font-weight: 600;
+  color: #fff;
 }
 
 .certificate-container:hover {
@@ -494,7 +512,7 @@ ul.timeline > li:before {
 
 .projects {
   padding: 20px;
-  background: #ffda45;
+  background: #00189c;
 }
 
 .card {
@@ -526,11 +544,6 @@ ul.timeline > li:before {
   border: 0px solid white !important;
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
-  transition: all 0.4s ease-in-out;
-}
-
-.card-blog:hover {
-  background: #191919 !important;
 }
 
 .card-blog-img {
@@ -586,12 +599,21 @@ canvas {
   transition: 1s;
 }
 
+/* ========================= GENERAL ========================= */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.url {
+  text-decoration: underline;
+}
+
 /* ========================= MEDIA ========================= */
 
 @media (max-width: 1024px) {
   .whitespace {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: black;
   }
 
@@ -612,4 +634,101 @@ canvas {
   .card:hover {
     transform: none;
   }
+}
+
+/* ========================= MATERIAL UI ========================= */
+.MuiTooltip-tooltip {
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  background-color: #0009be !important;
+}
+
+.MuiTooltip-arrow {
+  color: #0009be !important;
+}
+
+.MuiListItemIcon-root .MuiSvgIcon-root {
+  color: white;
+}
+
+
+/* ========================= SKILLS ========================= */
+.section {
+  display: flex;
+  justify-content: center;
+}
+.wall {
+  display: flex;
+}
+.v-boxes {
+  display: flex;
+  flex-direction: column;
+}
+.v-boxes:not(:first-child) {
+  margin-left: -75px;
+}
+.second {
+  margin-top: 75px;
+}
+.third {
+  margin-top: 150px;
+}
+.forth {
+  margin-top: 225px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: 25px;
+  cursor: pointer;
+}
+
+.box-face {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 9, 190, 0.6);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.box-face:hover {
+  background-color: rgba(0, 9, 190, 0.3);
+}
+
+.box-face .box-text {
+  line-height: 100px;
+  text-align: center;
+  font-size: 40px;
+  color: #0009be;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  transition: opacity 0s linear 0.3s;
+}
+.box-back .box-text {
+  line-height: 100px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+.box-back {
+  z-index: 0;
+  background-image: linear-gradient(#fff, #efefef);
+}
+.box-text img {
+  max-width: 40px;
+  max-height: 40px;
+  /* -webkit-filter: grayscale(100%) saturate(0);
+  filter: grayscale(100%) saturate(0);
+  opacity: 1; */
 }

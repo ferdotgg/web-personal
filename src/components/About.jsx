@@ -1,60 +1,38 @@
 import React from "react";
+import { Grid, Typography, Box } from "@material-ui/core";
+import { colors } from "../theme/colors.theme";
 
 const About = () => {
+  const { white } = colors;
+
   return (
-    <section className="about-me">
-      <div className="about-me-title">
-        <h1>¿Quién soy?</h1>
-      </div>
-      <div style={{ color: "black" }} className="about-me-info">
-        <p>
-          Soy <span className="about-bold">Fernando</span>, un desarollador de
-          software que vive en <span className="about-bold">Costa Rica</span>,
-          actualmente estoy estudiando ingeniería en sistemas en la{" "}
-          <a
-            href="https://www.una.ac.cr/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            UNA
-          </a>{" "}
-          y me estoy formando profesionalmente en el ámbito de programación en{" "}
-          <a
-            href="https://platzi.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Platzi
-          </a>
-          .
-        </p>
-        <p>
-          Tengo 23 años, manejo tecnologías tanto de{" "}
-          <span className="about-bold">frontend</span> como de{" "}
-          <span className="about-bold">backend</span>, para poder desarrollar
-          proyectos de calidad.
-        </p>
-        <p>
-          Me encantan los <span className="about-bold">videojuegos</span>, de
-          ahí nace mi pasión por los <span className="about-bold">esports</span>{" "}
-          y esto me lleva a ser el co-fundador de una{" "}
-          <a
-            href="https://torneos.gg/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            startup
-          </a>
-          , la cual brinda servicios para aquellos jugadores como yo.
-        </p>
-        <p>
-          Siempre trato de transmitir mis pasiones por medio de lo que hago, en
-          este caso es por medio de el{" "}
-          <span className="about-bold">desarrollo web</span> y el{" "}
-          <span className="about-bold">diseño.</span>
-        </p>
-      </div>
-    </section>
+    <Box component="section" p={3} bgcolor="#000a4e" color={white}>
+      <Grid container spacing={3} alignItems="center">
+        <Grid item xs={12} md={6} lg={6}>
+          <Box textAlign="center">
+            <Typography variant="h2" style={{ fontWeight: 900, color: white }}>
+              Who I am?
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={6} lg={6}>
+          <Box mb={1}>
+            <Typography component="p" variant="h5" style={{ fontWeight: 600 }}>
+              I'm <span className="about-bold">Fernando Briceño</span>, a
+              Software Engineer from{" "}
+              <span className="about-bold">Costa Rica</span>, who loves and is
+              passionate about technology and video games. Trained to solve
+              problems with different solutions using programming skills.
+            </Typography>
+          </Box>
+          <Typography component="p" variant="h5" style={{ fontWeight: 600 }}>
+            I have experience in <span className="about-bold">frontend</span>{" "}
+            and <span className="about-bold">backend</span> technologies
+          </Typography>
+        </Grid>
+      </Grid>
+      <Box height={130} />
+    </Box>
   );
 };
 
