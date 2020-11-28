@@ -175,6 +175,13 @@ export const myCertificates = [
     url:
       "https://platzi.com/@ScriptKash/curso/1991-next/diploma/detalle/",
   },
+  {
+    name: "Curso de Unit Testing con Jest en React",
+    image:
+      "https://static.platzi.com/media/achievements/badge-unit-testing-jest-react-bb2bcb68-aeb7-4ff3-886e-f04816dfe0a0.png",
+    url:
+      "https://platzi.com/@ScriptKash/curso/1788-jest/diploma/detalle/",
+  },
 ];
 
 export const principalCertificates = [
