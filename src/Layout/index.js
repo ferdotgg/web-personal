@@ -22,13 +22,12 @@ import StarIcon from "@material-ui/icons/Star";
 
 import Brightness7Icon from "@material-ui/icons/Brightness7";
 import ComputerIcon from "@material-ui/icons/Computer";
-// import BallotIcon from "@material-ui/icons/Ballot";
-
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Link } from "react-router-dom";
-
 import FavoriteIcon from "@material-ui/icons/Favorite";
+
 import MenuIcon from "@material-ui/icons/Menu";
 
 const useStyles = makeStyles((theme) =>
@@ -127,22 +126,17 @@ const Layout = ({
       icon: <ComputerIcon />,
       url: "/projects",
     },
-    // {
-    //   name: "Posts",
-    //   icon: <BallotIcon />,
-    //   url: "/posts",
-    // },
   ];
 
   const socials = [
     {
-      name: "GitHub",
-      url: "https://github.com/ScriptKash",
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/scriptkash/",
       icon: <LinkedInIcon />,
     },
     {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/in/scriptkash/",
+      name: "GitHub",
+      url: "https://github.com/ScriptKash",
       icon: <GitHubIcon />,
     },
     {

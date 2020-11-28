@@ -192,7 +192,7 @@ const Home = ({ desktop }) => {
                       variant="h6"
                       style={{ color: fade(colors.white, 0.6) }}
                     >
-                      Front-End Developer
+                      Frontend Developer
                     </Typography>
                   </Box>
                 </Fade>
